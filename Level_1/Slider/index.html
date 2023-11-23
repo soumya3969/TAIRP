@@ -2,41 +2,57 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IMAGESLIDER</title>
-    <link rel="stylesheet" href="./style.css" />
+    <!-- *Using Fontawesome cdn -->
     <script
       src="https://kit.fontawesome.com/9d3f11b61e.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Image Slider</title>
   </head>
   <body>
-    <div class="slide">
-      <div class="list">
-        <img src="./assets/i (1).JPG" />
-        <img src="./assets/i (2).JPG" />
-        <img src="./assets/i (3).JPG" />
-        <img src="./assets/i (4).JPG" />
-        <img src="./assets/i (5).JPG" />
-        <img src="./assets/i (6).JPG" />
+    <center><h1>__Image Slider__</h1></center>
+    <div class="container">
+      <div class="image">
+        <img src="./assets/i (1).JPG" alt="" />
       </div>
-      <div class="buttons">
-        <button id="prev" onclick="changeSlide(-1)">
+      <div class="image">
+        <img src="./assets/i (2).JPG" alt="" />
+      </div>
+      <div class="image">
+        <img src="./assets/i (3).JPG" alt="" />
+      </div>
+      <div class="image">
+        <img src="./assets/i (4).JPG" alt="" />
+      </div>
+      <div class="image">
+        <img src="./assets/i (5).JPG" alt="" />
+      </div>
+      <div class="image">
+        <img src="./assets/i (6).JPG" alt="" />
+      </div>
+
+      <div class="button">
+        <a onclick="nextimg(-1)" class="prev">
           <i class="fa-solid fa-angle-left" style="color: #2ecc65"></i>
-        </button>
-        <button id="next" onclick="changeSlide(1)">
+        </a>
+        <a onclick="nextimg(1)" class="next">
           <i class="fa-solid fa-angle-right" style="color: #2ecc65"></i>
-        </button>
+        </a>
       </div>
-      <ul class="dots">
-        <li class="active"></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
+
+      <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+      </div>
     </div>
     <script src="./script.js"></script>
+    
   </body>
 </html>

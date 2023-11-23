@@ -1,27 +1,35 @@
+var imageno = 1;
+displayimg(imageno);
 
-
-let currentIndex = 0;
-
-function changeSlide(n) {
-    currentIndex += n;
-    showSlide();
+function nextimg(n) {
+  displayimg((imageno += n));
 }
 
-function showSlide() {
-    const slider = document.querySelector('.list');
-    const slides = document.querySelectorAll('.list img');
-    
-    if (currentIndex < 0) {
-        currentIndex = slides.length - 1;
-    } else if (currentIndex >= slides.length) {
-        currentIndex = 0;
-    }
-
-    const translationValue = -currentIndex * 100 + '%';
-    slider.style.transform = 'translateX(' + translationValue + ')';
+function currentSlide(n) {
+  displayimg((imageno = n));
 }
 
-// !Automatic slide change
-setInterval(() => {
-    changeSlide(1);
-}, 5000);
+function displayimg(n) {
+  var i;
+  var image = document.getElementsByClassName("image");
+  var dots = document.getElementsByClassName("dot");
+
+  if (n > image.length) {
+    imageno = 1;
+  }
+
+  if (n < 1) {
+    imageno = image.length;
+  }
+
+  for (i = 0; i < image.length; i++) {
+    image[i].style.display = "none";
+  }
+
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  image[imageno - 1].style.display = "block";
+  dots[imageno - 1].className += " active";
+}
