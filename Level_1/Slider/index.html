@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMAGESLIDER</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/9d3f11b61e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="slide">
+      <div class="list">
+        <img src="./assets/i (1).JPG" />
+        <img src="./assets/i (2).JPG" />
+        <img src="./assets/i (3).JPG" />
+        <img src="./assets/i (4).JPG" />
+        <img src="./assets/i (5).JPG" />
+        <img src="./assets/i (6).JPG" />
+      </div>
+      <div class="buttons">
+        <button id="prev" onclick="changeSlide(-1)">
+          <i class="fa-solid fa-angle-left" style="color: #2ecc65"></i>
+        </button>
+        <button id="next" onclick="changeSlide(1)">
+          <i class="fa-solid fa-angle-right" style="color: #2ecc65"></i>
+        </button>
+      </div>
+      <ul class="dots">
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
