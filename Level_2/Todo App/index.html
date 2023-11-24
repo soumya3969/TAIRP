@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./Assets/checklist.png" type="image/x-icon">
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div class="container">
+      <h4 class="text-center heading">Get Shit Done</h4>
+
+      <div class="row ">
+        <div class="columns searchBar large-8 large-offset-2">
+          <div class="columns medium-8">
+            <input id="todo-input" type="text" />
+          </div>
+          <div class="columns medium-4">
+            <button onclick="addItem()" class="button expanded">Submit</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row lists">
+        <div class="columns medium-8 medium-offset-2">
+          <ul id="list-items"></ul>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

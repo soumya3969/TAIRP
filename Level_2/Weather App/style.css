@@ -11,15 +11,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(
-    45deg,
-    #043f30,
-    #0e99b0,
-    #262481,
-    #8d42a8,
-    #59a842
-  );
-  background-size: 1000% 1000%;
+  background: url(./Assets/icons/w_bgc.jpg);
+  background-size: cover;
+  background-position: center center;
 
   -webkit-animation: cbgc 30s ease infinite;
   -moz-animation: cbgc 30s ease infinite;
@@ -68,7 +62,7 @@ body {
   justify-content: center;
   gap: 25px;
   padding: 15px;
-  background: #07182e;
+  background: #07182ec4;
   position: relative;
   place-content: center;
   place-items: center;

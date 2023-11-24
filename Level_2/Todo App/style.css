@@ -1,0 +1,104 @@
+body {
+  font-family: "Arial", sans-serif;
+  background: url(./Assets/bgc.jpg) no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 0;
+}
+
+.heading {
+  margin: 40px 0 15px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: #333;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+#todo-input {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 1em;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.button {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 1em;
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+#list-items {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+#list-items li {
+  font-size: 1.2em;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#list-items li.done {
+  background-color: #e0e0e0;
+  text-decoration: line-through;
+  color: #777;
+}
+
+.label {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 3px;
+  margin-right: 5px;
+  transition: background-color 0.3s;
+}
+
+.label:hover {
+  background-color: #ddd;
+}
+
+.label.alert {
+  background-color: #ff4136;
+  color: #fff;
+}
+
+.label.alert:hover {
+  background-color: #d50000;
+}
+small {
+  background-color: #35ceba;
+}
+.lists {
+  min-width: 25vw;
+}
+.searchBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
